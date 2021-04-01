@@ -1,0 +1,271 @@
+
+{% extends "layout.html" %}
+
+
+{% block pageTitle %}
+  Manage Kickstart Scheme Payments (Prototype)
+{% endblock %}
+
+{% block beforeContent %}
+<a href="ApprovePaymentWage2B">Version B</a>
+
+<h1 class="govuk-heading-xl">
+  <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="more-detail">
+        Approve monthly Payment
+      </label>
+    </h1>
+    <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="more-detail">
+        BBBB-BBBB
+      </label>
+    <label class="govuk-label govuk-label--m" for="more-detail">
+            Lilia Lambdin
+      </label>
+      </h1>
+      <a>Case Status:</a>
+      <strong class="govuk-tag govuk-tag--green">
+      In Payment
+      </strong>
+<p></p>
+
+      <a>Payment Status:</a>
+    <strong class="govuk-tag govuk-tag--yellow">
+Awaiting Approval
+</strong>
+
+
+{% endblock %}
+
+{% block content %}
+<table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header ">Title</th>
+      <th scope="col" class="govuk-table__header ">Detail</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Claimant ID</td>
+      <td class="govuk-table__cell ">623091623-jkdsbfjbkjsbhd-1289731927</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">National insurance number</td>
+      <td class="govuk-table__cell ">AA123456A</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Application ID</td>
+      <td class="govuk-table__cell ">KS12345678</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Employer organisation name</td>
+      <td class="govuk-table__cell ">Amcor PLC</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Invoice Amount</td>
+      <td class="govuk-table__cell ">£492.44</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Payment Number</td>
+      <td class="govuk-table__cell ">1</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Date of Birth</td>
+      <td class="govuk-table__cell ">08/11/2003</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Payment Due Date</td>
+      <td class="govuk-table__cell ">15/11/2020</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Start of Payment Period</td>
+      <td class="govuk-table__cell ">02/11/2020</td>
+    </tr>
+  </tbody>
+</table>
+
+
+             <table class="govuk-table">
+               <thead class="govuk-table__head">
+                 <tr class="govuk-table__row">
+                   <th scope="col" class="govuk-table__header ">Notes</th>
+                   <th scope="col" class="govuk-table__header ">User</th>
+                   <th scope="col" class="govuk-table__header ">Date</th>
+                 </tr>
+               </thead>
+               <tbody class="govuk-table__body">
+                 <tr class="govuk-table__row">
+                   <td class="govuk-table__cell ">Updated employee details</td>
+                   <td class="govuk-table__cell ">Geralt</td>
+                   <td class="govuk-table__cell ">14/1/2021 at 08:10</td>
+                 </tr>
+                 <tr class="govuk-table__row">
+                   <td class="govuk-table__cell ">Confirmation from Employee phone call of start date</td>
+                   <td class="govuk-table__cell ">Jaskier</td>
+                   <td class="govuk-table__cell ">13/1/2021 at 08:10</td>
+                 </tr>
+               </tbody>
+             </table>
+             <nav class="hmcts-pagination" id="pagination-label">
+
+             <p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
+
+             <ul class="hmcts-pagination__list">
+
+             <li class="hmcts-pagination__item  hmcts-pagination__item--prev">
+             <a class="hmcts-pagination__link" href="">Previous<span class="govuk-visually-hidden"> set of pages</span></a>
+             </li>
+
+             <li class="hmcts-pagination__item"><a class="hmcts-pagination__link" href="/page=1">1</a></li>
+
+             <li class="hmcts-pagination__item hmcts-pagination__item--dots">...</li>
+
+             <li class="hmcts-pagination__item"><a class="hmcts-pagination__link" href="/page=5">5</a></li>
+
+             <li class="hmcts-pagination__item hmcts-pagination__item--active">6</li>
+
+             <li class="hmcts-pagination__item"><a class="hmcts-pagination__link" href="/page=7">7</a></li>
+
+             <li class="hmcts-pagination__item hmcts-pagination__item--dots">...</li>
+
+             <li class="hmcts-pagination__item"><a class="hmcts-pagination__link" href="/page=10">10</a></li>
+
+             <li class="hmcts-pagination__item  hmcts-pagination__item--next">
+             <a class="hmcts-pagination__link" href="">Next<span class="govuk-visually-hidden"> set of pages</span></a>
+             </li>
+
+             </ul>
+
+             <p class="hmcts-pagination__results">Showing <b>10</b> to <b>20</b> of <b>256</b> results</p>
+
+             </nav>
+             <p></p>
+<p></p>
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+      <h1 class="govuk-fieldset__heading">
+        Is there evidence of earnings in Searchlight?
+      </h1>
+    </legend>
+    <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
+        <label class="govuk-label govuk-radios__label" for="contact">
+          Yes
+        </label>
+      </div>
+      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact">
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="contact-by-email">
+            <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+               <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                 <h1 class="govuk-fieldset__heading">
+                   RTI Start date
+                 </h1>
+               </legend>
+               <div id="passport-issued-hint" class="govuk-hint">
+                 For example, 27 3 2007
+               </div>
+               <div class="govuk-date-input" id="passport-issued">
+                 <div class="govuk-date-input__item">
+                   <div class="govuk-form-group">
+                     <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                       Day
+                     </label>
+                     <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                 </div>
+                 <div class="govuk-date-input__item">
+                   <div class="govuk-form-group">
+                     <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                       Month
+                     </label>
+                     <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                 </div>
+                 <div class="govuk-date-input__item">
+                   <div class="govuk-form-group">
+                     <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                       Year
+                     </label>
+                     <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                 </div>
+               </div>
+             </fieldset>
+
+
+<p></p>
+             <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading">
+                  RTI End Date
+                </h1>
+              </legend>
+              <div id="passport-issued-hint" class="govuk-hint">
+                For example, 27 3 2007
+              </div>
+              <div class="govuk-date-input" id="passport-issued">
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                      Day
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                </div>
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                      Month
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                </div>
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                      Year
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+                </div>
+              </div>
+              <p></p>
+            </fieldset>
+            <div class="govuk-form-group">
+              <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="account-number">
+                RTI Actual Amount
+                  </label>
+                </h1>
+                <div class="govuk-input__wrapper">
+                    <div class="govuk-input__prefix" aria-hidden="true">£</div>
+                    <input class="govuk-input govuk-input--width-5" id="cost" name="cost" type="text" spellcheck="false">
+                  </div>            </div>
+          </label>
+          </div>
+
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
+        <label class="govuk-label govuk-radios__label" for="contact-2">
+          No
+        </label>
+      </div>
+      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-2">
+        <div class="govuk-form-group">
+          <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="account-number">
+            Notes
+              </label>
+            </h1>
+          <input class="govuk-input govuk-input--width-10" id="account-number" name="account-number" type="text" spellcheck="false" aria-describedby="account-number-hint" pattern="[0-9]*" inputmode="numeric">
+        </div>
+
+      </div>
+  </fieldset>
+
+
+
+  <button class="govuk-button" data-module="govuk-button" href="Save and Continue" onclick="LinktoSendWagePayment()">
+    Continue
+  </button>
+  <script>
+    function LinktoSendWagePayment() {
+      window.location.href="SendWagePayment"
+    }
+  </script>
+{% endblock %}

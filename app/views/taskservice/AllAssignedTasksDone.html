@@ -1,0 +1,158 @@
+
+{% extends "layout.html" %}
+
+
+{% block pageTitle %}
+  Manage Kickstart Scheme Payments (Prototype)
+{% endblock %}
+
+{% block beforeContent %}
+
+<div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+  <div class="govuk-notification-banner__header">
+    <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+      Notification
+    </h2>
+  </div>
+  <div class="govuk-notification-banner__content">
+    <p class="govuk-notification-banner__heading">
+      2 tasks assigned to Agent.Name
+    </p>
+  </div>
+</div>
+<h1 class="govuk-heading-xl">
+  <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="more-detail">
+        All assigned tasks
+      </label>
+    </h1>
+
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="AgentName">
+      Filter by agent name
+    </label>
+    <input class="govuk-input govuk-input--width-10" id="AgentName" name="AgentList" list="AgentList" type="text" value="All Agents">
+    <datalist id="AgentList">
+    	<option>All Agents</option>
+    	<option>Agent 1</option>
+    	<option>Agent 2</option>
+    	<option>Agent 3</option>
+    	<option>Agent 4</option>
+    </datalist>
+    <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+      Apply
+    </button>
+</div>
+
+<button class="govuk-button govuk-button--primary" data-module="govuk-button" onclick="LinktoReassignTask()">
+  Reassign
+</button>
+<script>
+  function LinktoReassignTask() {
+    window.location.href="ReassignTask"
+  }
+</script>
+<table class="govuk-table">
+<thead class="govuk-table__head">
+  <tr class="govuk-table__row">
+    <th class="govuk-table__header moj-multi-select__select-all-container" scope="col"></th>
+    <th scope="col" class="govuk-table__header ">Task</th>
+    <th scope="col" class="govuk-table__header ">Application ID</th>
+    <th scope="col" class="govuk-table__header ">Introduction ID</th>
+    <th scope="col" class="govuk-table__header ">Task due date</th>
+    <th scope="col" class="govuk-table__header ">Task assigned date</th>
+    <th scope="col" class="govuk-table__header ">Assigned to</th>
+  </tr>
+</thead>
+<tbody class="govuk-table__body">
+  <tr class="govuk-table__row">
+    <td class="govuk-table__cell">
+      <div class="govuk-checkboxes__item govuk-checkboxes--small moj-multi-select__checkbox">
+        <input type="checkbox" class="govuk-checkboxes__input" id="mountain-denali" value="denali">
+        <label class="govuk-label govuk-checkboxes__label" for="mountain-denali">
+          <span class="govuk-visually-hidden">Select Denali</span>
+        </label>
+      </div>
+    </td>
+    <td class="govuk-table__cell ">Setup payment</td>
+    <td class="govuk-table__cell ">KS12345678</td>
+    <td class="govuk-table__cell ">AAAA-AAAA</td>
+    <td class="govuk-table__cell ">01/11/2020</td>
+    <td class="govuk-table__cell ">02/11/2020</td>
+    <td class="govuk-table__cell ">Agent 1</td>
+  </tr>
+</tbody>
+<tbody class="govuk-table__body">
+  <tr class="govuk-table__row">
+    <td class="govuk-table__cell">
+      <div class="govuk-checkboxes__item govuk-checkboxes--small moj-multi-select__checkbox">
+        <input type="checkbox" class="govuk-checkboxes__input" id="mountain-denali" value="denali">
+        <label class="govuk-label govuk-checkboxes__label" for="mountain-denali">
+          <span class="govuk-visually-hidden">Select Denali</span>
+        </label>
+      </div>
+    </td>
+    <td class="govuk-table__cell ">Setup payment</td>
+    <td class="govuk-table__cell ">KS12345678</td>
+    <td class="govuk-table__cell ">AAAA-AAAA</td>
+    <td class="govuk-table__cell ">01/11/2020</td>
+    <td class="govuk-table__cell ">02/11/2020</td>
+    <td class="govuk-table__cell ">Agent 1</td>
+  </tr>
+</tbody>
+<tbody class="govuk-table__body">
+  <tr class="govuk-table__row">
+    <td class="govuk-table__cell">
+      <div class="govuk-checkboxes__item govuk-checkboxes--small moj-multi-select__checkbox">
+        <input type="checkbox" class="govuk-checkboxes__input" id="mountain-denali" value="denali">
+        <label class="govuk-label govuk-checkboxes__label" for="mountain-denali">
+          <span class="govuk-visually-hidden">Select Denali</span>
+        </label>
+      </div>
+    </td>
+    <td class="govuk-table__cell ">Setup payment</td>
+    <td class="govuk-table__cell ">KS12345678</td>
+    <td class="govuk-table__cell ">AAAA-AAAA</td>
+    <td class="govuk-table__cell ">01/11/2020</td>
+    <td class="govuk-table__cell ">02/11/2020</td>
+    <td class="govuk-table__cell ">Agent 2</td>
+  </tr>
+</tbody>
+</table>
+<nav class="hmcts-pagination" id="pagination-label">
+
+<p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
+
+<ul class="hmcts-pagination__list">
+
+<li class="hmcts-pagination__item  hmcts-pagination__item--prev">
+<a class="hmcts-pagination__link" href="">Previous<span class="govuk-visually-hidden"> set of pages</span></a>
+</li>
+
+<li class="hmcts-pagination__item"><a class="hmcts-pagination__link" href="/page=1">1</a></li>
+
+<li class="hmcts-pagination__item hmcts-pagination__item--dots">...</li>
+
+<li class="hmcts-pagination__item"><a class="hmcts-pagination__link" href="/page=5">5</a></li>
+
+<li class="hmcts-pagination__item hmcts-pagination__item--active">6</li>
+
+<li class="hmcts-pagination__item"><a class="hmcts-pagination__link" href="/page=7">7</a></li>
+
+<li class="hmcts-pagination__item hmcts-pagination__item--dots">...</li>
+
+<li class="hmcts-pagination__item"><a class="hmcts-pagination__link" href="/page=10">10</a></li>
+
+<li class="hmcts-pagination__item  hmcts-pagination__item--next">
+<a class="hmcts-pagination__link" href="">Next<span class="govuk-visually-hidden"> set of pages</span></a>
+</li>
+
+</ul>
+
+<p class="hmcts-pagination__results">Showing <b>10</b> to <b>20</b> of <b>256</b> results</p>
+
+</nav>
+
+{% endblock %}

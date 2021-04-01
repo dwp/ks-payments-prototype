@@ -1,0 +1,183 @@
+
+{% extends "layout.html" %}
+
+
+{% block pageTitle %}
+  Manage Kickstart Scheme Payments (Prototype)
+{% endblock %}
+{% block beforeContent %}
+<h1 class="govuk-heading-xl">
+  <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="more-detail">
+        View Supplier
+      </label>
+    </h1>
+
+    <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="more-detail">
+        KS12345678
+      </label>
+    <label class="govuk-label govuk-label--m" for="more-detail">
+            Test Company Ltd
+      </label>
+      </h1>
+{% endblock %}
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column">
+      <div class="govuk-tabs" data-module="govuk-tabs">
+        <h2 class="govuk-tabs__title">
+          Contents
+        </h2>
+        <ul class="govuk-tabs__list">
+          <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+            <a class="govuk-tabs__tab" href="#Supplier-Details">
+              Supplier Details
+            </a>
+          </li>
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#Payment-History">
+              Payment History
+            </a>
+          </li>
+        </ul>
+        <div class="govuk-tabs__panel" id="Supplier-Details">
+          <h2 class="govuk-heading-l">Supplier Details</h2>
+          <table class="govuk-table">
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header"></th>
+                <th scope="col" class="govuk-table__header"></th>
+                <th scope="col" class="govuk-table__header"></th>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">Supplier Number</td>
+                <td class="govuk-table__cell"></td>
+                <td class="govuk-table__cell">1000001</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">Site Name</td>
+                <td class="govuk-table__cell"></td>
+                <td class="govuk-table__cell">KICKSTART</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">PayeeName</td>
+                <td class="govuk-table__cell"></td>
+                <td class="govuk-table__cell">Test Company LIMITED#LS101LG#KICKSTART</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">Application ID</td>
+                <td class="govuk-table__cell"></td>
+                <td class="govuk-table__cell">KS12345678</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell"> Building and street line 1 of 2 </td>
+                <td class="govuk-table__cell"></td>
+                <td class="govuk-table__cell">1 Street</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell"> Building and street line 2 of 2 </td>
+                <td class="govuk-table__cell"></td>
+                <td class="govuk-table__cell">2nd Line</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell"> Town or city </td>
+                <td class="govuk-table__cell"></td>
+                <td class="govuk-table__cell">Leeds</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">County</td>
+                <td class="govuk-table__cell"></td>
+                <td class="govuk-table__cell">West Yorkshire</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">Postcode</td>
+                <td class="govuk-table__cell"></td>
+                <td class="govuk-table__cell">LS1 1AA</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell"> Payee Remittance Email Address</td>
+                <td class="govuk-table__cell"></td>
+                <td class="govuk-table__cell">Person@leeds.com</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell"> VAT Registration Number</td>
+                <td class="govuk-table__cell"></td>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell"> Name on the account </td>
+                <td class="govuk-table__cell"></td>
+                <td class="govuk-table__cell">Sample LTD</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell"> Sort code </td>
+                <td class="govuk-table__cell"></td>
+                <td class="govuk-table__cell">123456</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">  Account number  </td>
+                <td class="govuk-table__cell"></td>
+                <td class="govuk-table__cell">12345678</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell"> Building society roll number </td>
+                <td class="govuk-table__cell"></td>
+                <td class="govuk-table__cell"></td>
+              </tr>
+            </tbody>
+          </table>
+          <button class="govuk-button govuk-button--secondary" data-module="govuk-button" onclick="LinktoEditSupplier()">
+            Edit
+          </button>
+          <script>
+            function LinktoEditSupplier() {
+              window.location.href="EditSupplier"
+            }
+          </script>
+        </div>
+        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="Payment-History">
+          <h2 class="govuk-heading-l">Past week</h2>
+          <table class="govuk-table">
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header">Introduction ID</th>
+                <th scope="col" class="govuk-table__header">Payment Number</th>
+                <th scope="col" class="govuk-table__header">Invoice Amount</th>
+                <th scope="col" class="govuk-table__header">Invoice Number</th>
+                <th scope="col" class="govuk-table__header">Payment Status</th>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">AAAA-AAAA</td>
+                <td class="govuk-table__cell">0</td>
+                <td class="govuk-table__cell">1500.00</td>
+                <td class="govuk-table__cell">Kick5005177000003</td>
+                <td class="govuk-table__cell">Payment Error</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">AAAA-AAAB</td>
+                <td class="govuk-table__cell">0</td>
+                <td class="govuk-table__cell">1500.00</td>
+                <td class="govuk-table__cell">Kick5005177000002</td>
+                <td class="govuk-table__cell">Payment Sent</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">AAAA-AAAC</td>
+                <td class="govuk-table__cell">0</td>
+                <td class="govuk-table__cell">1500.00</td>
+                <td class="govuk-table__cell">Kick5005177000001</td>
+                <td class="govuk-table__cell">Payment Sent</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+
+{% endblock %}

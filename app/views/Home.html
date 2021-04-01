@@ -1,0 +1,90 @@
+
+{% extends "layout.html" %}
+
+
+{% block pageTitle %}
+  Manage Kickstart Scheme Payments (Prototype)
+{% endblock %}
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">Manage Kickstart Scheme payments</h1>
+    <p>
+      Use this service to manage Kickstart Scheme payments to suppliers and their employees.
+    </p>
+  </div>
+  </div>
+{% endblock %}
+{% block content %}
+   <div class="govuk-grid-row">
+     <div class="govuk-grid-column-one-third">
+       <div class="card">
+        <div class="container">
+          <h1 class="govuk-heading-m">Employees</h1>
+          <hr>
+          <a class="hmcts-sub-navigation__link"  href="AddCase" >
+            Add employee
+          </a>
+          <a class="hmcts-sub-navigation__link"  href="SearchCase" >
+            Find employee
+          </a>
+          <p> &nbsp; </p>
+            <p> &nbsp; </p>
+        </div>
+      </div>
+     </div>
+     <div class="govuk-grid-column-one-third">
+       <div class="card">
+        <div class="container">
+          <h1 class="govuk-heading-m">Employers</h1>
+          <hr>
+          <a class="hmcts-sub-navigation__link"  href="SearchSuppliers" >
+            Find Employers
+          </a>
+          <a class="hmcts-sub-navigation__link"  href="Report_SuppliersNoSOP" >
+            Employers missing details
+          </a>
+          <a class="hmcts-sub-navigation__link"  href="Report_AllSuppliers" >
+            View all Employers
+          </a>
+            <p> &nbsp; </p>
+        </div>
+      </div>
+     </div>
+     <div class="govuk-grid-column-one-third">
+       <div class="card">
+        <div class="container">
+         <h1 class="govuk-heading-m">Payments</h1>
+         <hr>
+         <a class="hmcts-sub-navigation__link"  href="SetupApproval" >
+           Approve setup payments
+         </a>
+         <a class="hmcts-sub-navigation__link"  href="#" >
+           Approve monthly payments
+         </a>
+         <p>&nbsp;</p>
+           <p> &nbsp; </p>
+        </div>
+      </div>
+     </div>
+   </div>
+<p>&nbsp;</p>
+<p></p>
+   <div class="govuk-grid-row">
+     <div class="govuk-grid-column-one-third">
+       <div class="card">
+        <div class="container">
+          <h1 class="govuk-heading-m">Service History</h1>
+          <hr>
+          <a class="hmcts-sub-navigation__link"  href="ServiceUpdate" >
+            Version 0.1
+          </a>
+            <p> &nbsp; </p>
+        </div>
+      </div>
+     </div>
+     </div>
+
+
+
+{% endblock %}

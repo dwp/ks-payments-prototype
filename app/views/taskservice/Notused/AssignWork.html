@@ -1,0 +1,148 @@
+
+{% extends "layout.html" %}
+
+
+{% block pageTitle %}
+  Manage Kickstart Scheme Payments (Prototype)
+{% endblock %}
+
+{% block beforeContent %}
+<h1 class="govuk-heading-xl">
+  <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="more-detail">
+        Assign Work (Setup Payments)
+      </label>
+    </h1>
+{% endblock %}
+
+{% block content %}
+<table class="govuk-table">
+<thead class="govuk-table__head">
+<tr class="govuk-table__row">
+  <th class="govuk-table__header moj-multi-select__select-all-container" scope="col"></th>
+  <th class="govuk-table__header" scope="col">Introduction ID</th>
+  <th class="govuk-table__header" scope="col">Employer Name</th>
+  <th class="govuk-table__header" scope="col">Due Date</th>
+  <th class="govuk-table__header govuk-table__header--numeric" scope="col">Assigned to</th>
+</tr>
+</thead>
+<tbody class="govuk-table__body">
+<tr class="govuk-table__row govuk-table__row--selected">
+  <td class="govuk-table__cell">
+    <div class="govuk-checkboxes__item govuk-checkboxes--small moj-multi-select__checkbox">
+      <input type="checkbox" class="govuk-checkboxes__input" id="mountain-aconcagua">
+      <label class="govuk-label govuk-checkboxes__label" for="mountain-aconcagua">
+        <span class="govuk-visually-hidden">Select Aconcagua</span>
+      </label>
+    </div>
+  </td>
+  <td class="govuk-table__cell">AAAA-AAAA</td>
+  <td class="govuk-table__cell">Nationwide</td>
+  <td class="govuk-table__cell">01/01/2021</td>
+  <td class="govuk-table__cell govuk-table__cell--numeric">-</td>
+</tr>
+<tr class="govuk-table__row">
+  <td class="govuk-table__cell">
+    <div class="govuk-checkboxes__item govuk-checkboxes--small moj-multi-select__checkbox">
+      <input type="checkbox" class="govuk-checkboxes__input" id="mountain-denali" value="denali">
+      <label class="govuk-label govuk-checkboxes__label" for="mountain-denali">
+        <span class="govuk-visually-hidden">Select Denali</span>
+      </label>
+    </div>
+  </td>
+  <td class="govuk-table__cell">BBBB-BBBB</td>
+  <td class="govuk-table__cell">JPMorgan Chase</td>
+  <td class="govuk-table__cell">01/01/2021</td>
+  <td class="govuk-table__cell govuk-table__cell--numeric">-</td>
+</tr>
+<tr class="govuk-table__row">
+  <td class="govuk-table__cell">
+    <div class="govuk-checkboxes__item govuk-checkboxes--small moj-multi-select__checkbox">
+      <input type="checkbox" class="govuk-checkboxes__input" id="mountain-elbrus" value="elbrus">
+      <label class="govuk-label govuk-checkboxes__label" for="mountain-elbrus">
+        <span class="govuk-visually-hidden">Select Elbrus</span>
+      </label>
+    </div>
+  </td>
+  <td class="govuk-table__cell">BBBB-AAAA</td>
+  <td class="govuk-table__cell">Nationwide</td>
+  <td class="govuk-table__cell">03/01/2021</td>
+  <td class="govuk-table__cell govuk-table__cell--numeric">-</td>
+</tr>
+<tr class="govuk-table__row">
+  <td class="govuk-table__cell">
+    <div class="govuk-checkboxes__item govuk-checkboxes--small moj-multi-select__checkbox">
+      <input type="checkbox" class="govuk-checkboxes__input" id="mountain-everest" value="everest">
+      <label class="govuk-label govuk-checkboxes__label" for="mountain-everest">
+        <span class="govuk-visually-hidden">Select Everest</span>
+      </label>
+    </div>
+  </td>
+  <td class="govuk-table__cell">CCCC-CCCC</td>
+  <td class="govuk-table__cell">Nationwide</td>
+  <td class="govuk-table__cell">03/01/2021</td>
+  <td class="govuk-table__cell govuk-table__cell--numeric">-</td>
+</tr>
+<tr class="govuk-table__row">
+  <td class="govuk-table__cell">
+    <div class="govuk-checkboxes__item govuk-checkboxes--small moj-multi-select__checkbox">
+      <input type="checkbox" class="govuk-checkboxes__input" id="mountain-kilimanjaro" value="kilimanjaro">
+      <label class="govuk-label govuk-checkboxes__label" for="mountain-kilimanjaro">
+        <span class="govuk-visually-hidden">Select Kilimanjaro</span>
+      </label>
+    </div>
+  </td>
+  <td class="govuk-table__cell">DDDD-DDDD</td>
+  <td class="govuk-table__cell">JPMorgan Chase</td>
+  <td class="govuk-table__cell">04/01/2021</td>
+  <td class="govuk-table__cell govuk-table__cell--numeric">Leon</td>
+</tr>
+<tr class="govuk-table__row">
+  <td class="govuk-table__cell">
+    <div class="govuk-checkboxes__item govuk-checkboxes--small moj-multi-select__checkbox">
+      <input type="checkbox" class="govuk-checkboxes__input" id="mountain-puncak-jaya" value="puncak-jaya">
+      <label class="govuk-label govuk-checkboxes__label" for="mountain-puncak-jaya">
+        <span class="govuk-visually-hidden">Select Puncak Jaya</span>
+      </label>
+    </div>
+  </td>
+  <td class="govuk-table__cell">EEEE-EEEE</td>
+  <td class="govuk-table__cell">JPMorgan Chase</td>
+  <td class="govuk-table__cell">05/01/2021</td>
+  <td class="govuk-table__cell govuk-table__cell--numeric">Sami</td>
+</tr>
+<tr class="govuk-table__row">
+  <td class="govuk-table__cell">
+    <div class="govuk-checkboxes__item govuk-checkboxes--small moj-multi-select__checkbox">
+      <input type="checkbox" class="govuk-checkboxes__input" id="mountain-vinson" value="vinson">
+      <label class="govuk-label govuk-checkboxes__label" for="mountain-vinson">
+        <span class="govuk-visually-hidden">Select Vinson</span>
+      </label>
+    </div>
+  </td>
+  <td class="govuk-table__cell">FFFF-FFFF</td>
+  <td class="govuk-table__cell">JPMorgan Chase</td>
+  <td class="govuk-table__cell">06/01/2021</td>
+  <td class="govuk-table__cell govuk-table__cell--numeric">Sami</td>
+</tr>
+</tbody>
+</table>
+<div class="govuk-form-group">
+  <label class="govuk-label" for="sort">
+    Agent Name
+  </label>
+  <select class="govuk-select" >
+    <option>Sami</option>
+    <option>Ethan</option>
+    <option>Leon</option>
+    <option>Alannah</option>
+  </select>
+  <button class="govuk-button" data-module="govuk-button">
+  Assign
+</button>
+</div>
+
+  <button href="Index" class="govuk-button govuk-button--secondary" data-module="govuk-button" >
+  Cancel
+</button>
+
+{% endblock %}

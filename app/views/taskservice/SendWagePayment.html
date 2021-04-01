@@ -1,0 +1,108 @@
+
+{% extends "layout.html" %}
+
+
+{% block pageTitle %}
+  Manage Kickstart Scheme Payments (Prototype)
+{% endblock %}
+
+{% block beforeContent %}
+<h1 class="govuk-heading-xl">
+  <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="more-detail">
+        Approve monthly payment
+      </label>
+    </h1>
+    <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="more-detail">
+        BBBB-BBBB
+      </label>
+    <label class="govuk-label govuk-label--m" for="more-detail">
+            Lilia Lambdin
+      </label>
+      </h1>
+      <a>Case Status:</a>
+      <strong class="govuk-tag govuk-tag--green">
+      In Payment
+      </strong>
+<p></p>
+
+      <a>Payment Status:</a>
+    <strong class="govuk-tag govuk-tag--yellow">
+Awaiting Approval
+</strong>
+{% endblock %}
+
+{% block content %}
+<table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header ">Title</th>
+      <th scope="col" class="govuk-table__header ">Detail</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Invoice Amount</td>
+      <td class="govuk-table__cell ">£492.44</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">est average hours per week</td>
+      <td class="govuk-table__cell ">24.01</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Difference in Value</td>
+      <td class="govuk-table__cell ">£0</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Checking</td>
+      <td class="govuk-table__cell ">No Checking Needed</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+      <h1 class="govuk-fieldset__heading">
+       Is the invoice amount correct?
+      </h1>
+    </legend>
+    <div id="contact-hint" class="govuk-hint">
+
+    </div>
+    <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
+        <label class="govuk-label govuk-radios__label" for="contact">
+          No – I need to amend the amount
+        </label>
+      </div>
+      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact">
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="contact-by-email">
+            What is the new amount?
+          </label>
+          <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false"></div>
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="contact-2" name="contact" type="radio" value="phone" data-aria-controls="conditional-contact-2">
+        <label class="govuk-label govuk-radios__label" for="contact-2">
+          Yes – the amount is correct
+        </label>
+      </div>
+      </div>
+  </fieldset>
+</div>
+
+  <button class="govuk-button" data-module="govuk-button" href="Save and Continue" onclick="LinktoHome_Wage1()">
+    Continue
+  </button>
+  <button href="Index" class="govuk-button govuk-button--secondary" data-module="govuk-button" >
+  Cancel
+</button>
+  <script>
+    function LinktoHome_Wage1() {
+      window.location.href="Home_Wage1"
+    }
+  </script>
+
+{% endblock %}

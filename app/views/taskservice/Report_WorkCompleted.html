@@ -1,0 +1,130 @@
+
+{% extends "layout.html" %}
+
+
+{% block pageTitle %}
+  Manage Kickstart Scheme Payments (Prototype)
+{% endblock %}
+
+{% block beforeContent %}
+<h1 class="govuk-heading-l">      Work completed management information  </h1>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-three-quarters">
+<p>The figures on this page show the amount of open tasks at the start of each day, and the amount of closed tasks at the end of each day.</p>
+  </div>
+  <div class="govuk-grid-column-one-quarter">
+    <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+  Download CSV
+</button>
+  </div>
+</div>
+
+<h1 class="govuk-heading-m">
+        Updating Employers
+      </h1>
+
+<table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header"></th>
+      <th scope="col" class="govuk-table__header">25/1/2020</th>
+      <th scope="col" class="govuk-table__header">26/1/2020</th>
+      <th scope="col" class="govuk-table__header">27/1/2020</th>
+      <th scope="col" class="govuk-table__header">28/1/2020 (Today)</th>
+      <th scope="col" class="govuk-table__header">Expected 29/1/2020</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">Tasks Open</td>
+      <td class="govuk-table__cell">10</td>
+      <td class="govuk-table__cell">4</td>
+      <td class="govuk-table__cell">12</td>
+      <td class="govuk-table__cell">16</td>
+      <td class="govuk-table__cell">32</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">Tasks Closed</td>
+      <td class="govuk-table__cell">5</td>
+      <td class="govuk-table__cell">2</td>
+      <td class="govuk-table__cell">2</td>
+      <td class="govuk-table__cell">11</td>
+      <td class="govuk-table__cell">0</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 class="govuk-heading-m">
+        Setup Payments
+      </h1>
+
+<table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header"></th>
+      <th scope="col" class="govuk-table__header">25/1/2020</th>
+      <th scope="col" class="govuk-table__header">26/1/2020</th>
+      <th scope="col" class="govuk-table__header">27/1/2020</th>
+      <th scope="col" class="govuk-table__header">28/1/2020 (Today)</th>
+      <th scope="col" class="govuk-table__header">Expected 29/1/2020</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">Tasks Open</td>
+      <td class="govuk-table__cell">10</td>
+      <td class="govuk-table__cell">4</td>
+      <td class="govuk-table__cell">12</td>
+      <td class="govuk-table__cell">16</td>
+      <td class="govuk-table__cell">32</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">Tasks Closed</td>
+      <td class="govuk-table__cell">5</td>
+      <td class="govuk-table__cell">2</td>
+      <td class="govuk-table__cell">2</td>
+      <td class="govuk-table__cell">11</td>
+      <td class="govuk-table__cell">0</td>
+    </tr>
+  </tbody>
+</table>
+
+<h1 class="govuk-heading-m">
+        monthly Payments
+      </h1>
+
+<table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header"></th>
+      <th scope="col" class="govuk-table__header">25/1/2020</th>
+      <th scope="col" class="govuk-table__header">26/1/2020</th>
+      <th scope="col" class="govuk-table__header">27/1/2020</th>
+      <th scope="col" class="govuk-table__header">28/1/2020 (Today)</th>
+      <th scope="col" class="govuk-table__header">Expected 29/1/2020</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">Tasks Open</td>
+      <td class="govuk-table__cell">10</td>
+      <td class="govuk-table__cell">4</td>
+      <td class="govuk-table__cell">12</td>
+      <td class="govuk-table__cell">16</td>
+      <td class="govuk-table__cell">32</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell">Tasks Closed</td>
+      <td class="govuk-table__cell">5</td>
+      <td class="govuk-table__cell">2</td>
+      <td class="govuk-table__cell">2</td>
+      <td class="govuk-table__cell">11</td>
+      <td class="govuk-table__cell">0</td>
+    </tr>
+  </tbody>
+</table>
+
+{% endblock %}

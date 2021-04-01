@@ -1,0 +1,169 @@
+
+{% extends "layout.html" %}
+
+
+{% block pageTitle %}
+  Manage Kickstart Scheme Payments (Prototype)
+{% endblock %}
+
+{% block beforeContent %}
+<h1 class="govuk-heading-xl">
+  <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="more-detail">
+        Approve monthly Payment
+      </label>
+    </h1>
+    <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="more-detail">
+        AAAA-AAAA
+      </label>
+    <label class="govuk-label govuk-label--m" for="more-detail">
+            Analisa Alexandra
+      </label>
+      </h1>
+      <a>Case Status:</a>
+      <strong class="govuk-tag govuk-tag--green">
+      In Payment
+      </strong>
+<p></p>
+
+      <a>Payment Status:</a>
+    <strong class="govuk-tag govuk-tag--yellow">
+Awaiting Approval
+</strong>
+{% endblock %}
+
+{% block content %}
+<table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header ">Title</th>
+      <th scope="col" class="govuk-table__header ">Detail</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Application ID</td>
+      <td class="govuk-table__cell ">KS12345678</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Introduction ID</td>
+      <td class="govuk-table__cell ">AAAA-AAAA</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Employer Name</td>
+      <td class="govuk-table__cell ">Amcor PLC</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Supplier Number</td>
+      <td class="govuk-table__cell ">12345678</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Site Name</td>
+      <td class="govuk-table__cell ">KICKSTART</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Invoice Amount</td>
+      <td class="govuk-table__cell ">£492.44</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Payment Number</td>
+      <td class="govuk-table__cell ">1</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Date of Birth</td>
+      <td class="govuk-table__cell ">08/11/2003</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Payment Due Date</td>
+      <td class="govuk-table__cell ">15/11/2020</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Start of Payment Period</td>
+      <td class="govuk-table__cell ">02/11/2020</td>
+    </tr>
+  </tbody>
+</table>
+
+  <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+     <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+       <h1 class="govuk-fieldset__heading">
+         RTI Start date
+       </h1>
+     </legend>
+     <div id="passport-issued-hint" class="govuk-hint">
+       For example, 27 3 2007
+     </div>
+     <div class="govuk-date-input" id="passport-issued">
+       <div class="govuk-date-input__item">
+         <div class="govuk-form-group">
+           <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+             Day
+           </label>
+           <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+       </div>
+       <div class="govuk-date-input__item">
+         <div class="govuk-form-group">
+           <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+             Month
+           </label>
+           <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+       </div>
+       <div class="govuk-date-input__item">
+         <div class="govuk-form-group">
+           <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+             Year
+           </label>
+           <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+       </div>
+     </div>
+
+   </fieldset>
+
+   <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+      <h1 class="govuk-fieldset__heading">
+        RTI End Date
+      </h1>
+    </legend>
+    <div id="passport-issued-hint" class="govuk-hint">
+      For example, 27 3 2007
+    </div>
+    <div class="govuk-date-input" id="passport-issued">
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+            Day
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+      </div>
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+            Month
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+      </div>
+      <div class="govuk-date-input__item">
+        <div class="govuk-form-group">
+          <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+            Year
+          </label>
+          <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" pattern="[0-9]*" inputmode="numeric"></div>
+      </div>
+    </div>
+
+  </fieldset>
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="width-20">
+        RTI Actual Amount
+      </label>
+      <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text"></div>
+
+  <button class="govuk-button" data-module="govuk-button" href="Save and Continue" onclick="LinktoSendWagePayment()">
+    Continue
+  </button>
+  <script>
+    function LinktoSendWagePayment() {
+      window.location.href="SendWagePayment"
+    }
+  </script>
+{% endblock %}

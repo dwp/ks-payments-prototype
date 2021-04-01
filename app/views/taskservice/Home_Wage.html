@@ -1,0 +1,113 @@
+
+{% extends "layout.html" %}
+
+
+{% block pageTitle %}
+  Manage Kickstart Scheme Payments (Prototype)
+{% endblock %}
+{% block beforeContent %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">Manage Kickstart Scheme payments</h1>
+    <p>
+      Use this service to manage Kickstart Scheme payments to suppliers and their employees.
+    </p>
+  </div>
+  </div>
+
+  <div class="govuk-inset-text">
+  Monthly payment for Analisa Alexandra not approved
+</div>
+{% endblock %}
+{% block content %}
+   <div class="govuk-grid-row">
+     <div class="govuk-grid-column-one-third">
+       <div class="card">
+        <div class="container">
+          <h1 class="govuk-heading-m">Employees</h1>
+          <hr>
+          <a class="hmcts-sub-navigation__link"  href="AddCase" >
+            Add employee
+          </a>
+          <a class="hmcts-sub-navigation__link"  href="SearchCase" >
+            Find employee
+          </a>
+          <p> &nbsp; </p>
+            <p> &nbsp; </p>
+        </div>
+      </div>
+     </div>
+     <div class="govuk-grid-column-one-third">
+       <div class="card">
+        <div class="container">
+          <h1 class="govuk-heading-m">Suppliers</h1>
+          <hr>
+          <a class="hmcts-sub-navigation__link"  href="SearchSuppliers" >
+            Find suppliers
+          </a>
+          <a class="hmcts-sub-navigation__link"  href="AddSupplier" >
+            Suppliers missing details <span id="notifications" class="moj-notification-badge">1500</span>
+          </a>
+          <a class="hmcts-sub-navigation__link"  href="Report_AllSuppliers" >
+            View all suppliers
+          </a>
+            <p> &nbsp; </p>
+        </div>
+      </div>
+     </div>
+     <div class="govuk-grid-column-one-third">
+       <div class="card">
+        <div class="container">
+         <h1 class="govuk-heading-m">Payments</h1>
+         <hr>
+         <a class="hmcts-sub-navigation__link"  href="SetupApproval" >
+           Approve setup payments <span id="notifications" class="moj-notification-badge">3472</span>
+         </a>
+         <a class="hmcts-sub-navigation__link"  href="ApprovePaymentWage2" >
+           Approve Monthly payments <span id="notifications" class="moj-notification-badge">799</span>
+         </a>
+         <p>&nbsp;</p>
+           <p> &nbsp; </p>
+        </div>
+      </div>
+     </div>
+   </div>
+<p>&nbsp;</p>
+<p></p>
+<div
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    <div class="card">
+     <div class="container">
+       <h1 class="govuk-heading-m">Service Management</h1>
+       <hr>
+       <a class="hmcts-sub-navigation__link"  href="Report_WorkCompleted" >
+         Work Completed MI
+       </a>
+       <a class="hmcts-sub-navigation__link"  href="Report_WorkDone" >
+         Work MI
+       </a>
+       <a class="hmcts-sub-navigation__link"  href="AssignWork" >
+         Assign Work
+       </a>
+         <p> &nbsp; </p>
+     </div>
+   </div>
+  </div>
+     <div class="govuk-grid-column-one-third">
+       <div class="card">
+        <div class="container">
+          <h1 class="govuk-heading-m">Service History</h1>
+          <hr>
+          <a class="hmcts-sub-navigation__link"  href="ServiceUpdate" >
+            Version 0.1
+          </a>
+            <p> &nbsp; </p>
+        </div>
+      </div>
+     </div>
+     </div>
+
+
+
+{% endblock %}

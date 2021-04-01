@@ -1,0 +1,50 @@
+
+{% extends "layout.html" %}
+
+
+{% block pageTitle %}
+  Manage Kickstart Scheme Payments (Prototype)
+{% endblock %}
+{% block beforeContent %}
+
+<h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="more-detail">
+    AAAA-AAAA
+  </label>
+<label class="govuk-label govuk-label--m" for="more-detail">
+        Analisa Alexandra
+  </label>
+  </h1>
+  <a > Placement status:</a>
+  <strong class="govuk-tag govuk-tag--green">
+In Payment
+</strong>
+{% endblock %}
+{% block content %}
+
+    <div class="govuk-form-group">
+      <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="more-detail">
+          Add note
+        </label>
+      </h1>
+      <div id="more-detail-hint" class="govuk-hint">
+        Do not include personal or financial information, like National Insurance numbers or credit card details.
+      </div>
+      <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+    </div>
+
+
+
+    <button class="govuk-button govuk-button--primary" data-module="govuk-button" onclick="LinktoViewCase()">
+  Add note
+</button>
+<button class="govuk-button govuk-button--secondary" data-module="govuk-button" onclick="LinktoViewCase()">
+Cancel
+</button>
+<script>
+  function LinktoViewCase() {
+    window.location.href="ViewCase"
+  }
+</script>
+  </div>
+
+{% endblock %}
