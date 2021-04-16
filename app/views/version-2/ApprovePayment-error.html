@@ -1,0 +1,137 @@
+
+{% extends "layout.html" %}
+
+
+{% block pageTitle %}
+Manage Kickstart Scheme Payments (Prototype)
+{% endblock %}
+
+{% block beforeContent %}
+
+<div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="govuk-error-summary">
+  <h2 class="govuk-error-summary__title" id="error-summary-title">
+    There is a problem
+  </h2>
+  <div class="govuk-error-summary__body">
+    <ul class="govuk-list govuk-error-summary__list">
+      <li>
+        <a href="ViewCase">Before you can approve this payment, edit the employee details to confirm if the Gateway is also the employer</a>
+      </li>
+
+    </ul>
+  </div>
+</div>
+
+<h1 class="govuk-heading-xl">
+  <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="more-detail">
+        Approve Setup Payment
+      </label>
+    </h1>
+    <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="more-detail">
+        Analisa Alexandra 
+      </label>
+    <label class="govuk-label govuk-label--m" for="more-detail">
+            AAAA-AAAA
+      </label>
+      </h1>
+          <label class="govuk-label govuk-label--xs" for="more-detail">
+Placement Status:
+      <strong class="govuk-tag govuk-tag--green">
+      In Payment
+      </strong>
+      </label>
+<p></p>
+
+                <label class="govuk-label govuk-label--xs" for="more-detail">
+Payment Status:
+    <strong class="govuk-tag govuk-tag--yellow">
+Awaiting Approval
+</strong>
+</label>
+{% endblock %}
+
+{% block content %}
+<table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header ">Title</th>
+      <th scope="col" class="govuk-table__header ">Detail</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Application ID</td>
+      <td class="govuk-table__cell ">KS12345678</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Introduction ID</td>
+      <td class="govuk-table__cell ">AAAA-AAAA</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Employer Name</td>
+      <td class="govuk-table__cell ">Tecso PLC</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Supplier Number</td>
+      <td class="govuk-table__cell ">75836298</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Site Name</td>
+      <td class="govuk-table__cell ">KICKSTART</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">NINO</td>
+      <td class="govuk-table__cell ">AA123456A</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Claimant ID</td>
+      <td class="govuk-table__cell ">d8f562a7-b1c6-4cf1-8765-abd635463cef</td>
+    </tr>    
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Invoice Amount</td>
+      <td class="govuk-table__cell ">£1,860.00</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Payment Number</td>
+      <td class="govuk-table__cell ">0</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Date of Birth</td>
+      <td class="govuk-table__cell ">08/11/2003</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Gateway Y or N</td>
+      <td class="govuk-table__cell ">Y</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Also Employer Y or N</td>
+      <td class="govuk-table__cell ">N</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Confirmed Start Date of Placement</td>
+      <td class="govuk-table__cell ">02/11/2020</td>
+    </tr>
+  </tbody>
+</table>
+
+<button disabled="disabled" aria-disabled="true" class="govuk-button govuk-button--disabled" data-module="govuk-button">
+  Approve Payment
+</button>
+
+  <button class="govuk-button govuk-button--secondary" data-module="govuk-button" href="Save and Continue" onclick="LinktoSetupApproval()">
+    Cancel
+  </button>
+
+  <script>
+    function LinktoSetupApprovalSent() {
+      window.location.href="SetupApprovalSent#Payment-History"
+    }
+  </script>
+
+  <script>
+    function LinktoSetupApproval() {
+      window.location.href="SetupApproval"
+    }
+  </script>
+
+{% endblock %}

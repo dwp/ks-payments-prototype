@@ -1,0 +1,347 @@
+
+{% extends "layout.html" %}
+
+
+{% block pageTitle %}
+  Manage Kickstart Scheme Payments (Prototype)
+{% endblock %}
+{% block beforeContent %}
+
+<h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="more-detail">
+    Analisa Alexandra 
+  </label>
+<label class="govuk-label govuk-label--m" for="more-detail">
+        AAAA-AAAA
+  </label>
+  </h1>
+  <label class="govuk-label govuk-label--xs" for="more-detail">Placement status:
+  <strong class="govuk-tag govuk-tag--green">
+In Payment
+</strong>
+</label>
+{% endblock %}
+{% block content %}
+<div class="govuk-width-container">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column">
+      <div class="govuk-tabs" data-module="govuk-tabs">
+        <h2 class="govuk-tabs__title">
+          Contents
+        </h2>
+        <ul class="govuk-tabs__list">
+          <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+            <a class="govuk-tabs__tab" href="#Supplier-Details">
+              Employee Details
+            </a>
+          </li>
+
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#Payment-History">
+              Payment
+            </a>
+          </li>
+          <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+            <a class="govuk-tabs__tab" href="#Case">
+              Placement Management
+            </a>
+          </li>
+          <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+            <a class="govuk-tabs__tab" href="#Notes">
+              Notes
+            </a>
+          </li>
+        </ul>
+        <div class="govuk-tabs__panel" id="Supplier-Details">
+          <h2 class="govuk-heading-l">Employee Details</h2>
+          <table class="govuk-table">
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header"></th>
+                <th scope="col" class="govuk-table__header"></th>
+                <th scope="col" class="govuk-table__header"></th>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell"><b>Introduction ID</b></td>
+                <td class="govuk-table__cell"></td>
+                <td class="govuk-table__cell">AAAA-AAAA</td>
+              </tr>
+              <tbody class="govuk-table__body">
+                <tr class="govuk-table__row">
+                  <td class="govuk-table__cell"><b>Claimant ID</b></td>
+                  <td class="govuk-table__cell"></td>
+                  <td class="govuk-table__cell">	77b312ad-99dd-4fe1-806a-fcd94f743544</td>
+                </tr>
+                <tbody class="govuk-table__body">
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell"><b>Name</b></td>
+                    <td class="govuk-table__cell"></td>
+                    <td class="govuk-table__cell">Analisa Alexandra</td>
+                  </tr>
+                  <tbody class="govuk-table__body">
+                    <tr class="govuk-table__row">
+                      <td class="govuk-table__cell"><b>Date of Birth</b></td>
+                      <td class="govuk-table__cell"></td>
+                      <td class="govuk-table__cell">08/11/2003</td>
+                    </tr>
+                    <tbody class="govuk-table__body">
+                      <tr class="govuk-table__row">
+                        <td class="govuk-table__cell"><b>NINO</b></td>
+                        <td class="govuk-table__cell"></td>
+                        <td class="govuk-table__cell">AA209092A</td>
+                      </tr>
+                      <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                          <td class="govuk-table__cell"><b>Application ID</b></td>
+                          <td class="govuk-table__cell"></td>
+                          <td class="govuk-table__cell">KS12345678</td>
+                        </tr>
+                        <tbody class="govuk-table__body">
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell"><b>Anticipated Start Date</b></td>
+                            <td class="govuk-table__cell"></td>
+                            <td class="govuk-table__cell">N/A</td>
+                          </tr>
+                          <tbody class="govuk-table__body">
+                            <tr class="govuk-table__row">
+                              <td class="govuk-table__cell"><b>Confirmed Start Date</b></td>
+                              <td class="govuk-table__cell"></td>
+                              <td class="govuk-table__cell">02/11/2020</td>
+                            </tr>
+                            <tbody class="govuk-table__body">
+                              <tr class="govuk-table__row">
+                                <td class="govuk-table__cell"><b>Gateway Yes or No</b></td>
+                                <td class="govuk-table__cell"></td>
+                                <td class="govuk-table__cell">Y</td>
+                              </tr>
+                            <tbody class="govuk-table__body">
+                              <tr class="govuk-table__row">
+                                <td class="govuk-table__cell"><b>Also the Employer Y or N</b></td>
+                                <td class="govuk-table__cell"></td>
+                                <td class="govuk-table__cell">Y</td>
+                              </tr>
+                              <tbody class="govuk-table__body">
+                                <tr class="govuk-table__row">
+                                  <td class="govuk-table__cell"><b>Gateway Org Name</b></td>
+                                  <td class="govuk-table__cell"></td>
+                                  <td class="govuk-table__cell">N/A</td>
+                                </tr>
+                                <tbody class="govuk-table__body">
+                                  <tr class="govuk-table__row">
+                                    <td class="govuk-table__cell"><b>Gateway Contact Name</b></td>
+                                    <td class="govuk-table__cell"></td>
+                                    <td class="govuk-table__cell">N/A</td>
+                                  </tr>
+                                  <tbody class="govuk-table__body">
+                                    <tr class="govuk-table__row">
+                                      <td class="govuk-table__cell"><b>Gateway Phone Number</b></td>
+                                      <td class="govuk-table__cell"></td>
+                                      <td class="govuk-table__cell">N/A</td>
+                                    </tr>
+                                    <tbody class="govuk-table__body">
+                                      <tr class="govuk-table__row">
+                                        <td class="govuk-table__cell"><b>Gateway Email</b></td>
+                                        <td class="govuk-table__cell"></td>
+                                        <td class="govuk-table__cell">N/A</td>
+                                      </tr>
+                                      <tbody class="govuk-table__body">
+                                        <tr class="govuk-table__row">
+                                          <td class="govuk-table__cell"><b>Employer Org Name</b></td>
+                                          <td class="govuk-table__cell"></td>
+                                          <td class="govuk-table__cell">Amcor Pls</td>
+                                        </tr>
+                                        <tbody class="govuk-table__body">
+                                          <tr class="govuk-table__row">
+                                            <td class="govuk-table__cell"><b>Employer Contact Name</b></td>
+                                            <td class="govuk-table__cell"></td>
+                                            <td class="govuk-table__cell">Zoraida</td>
+                                          </tr>
+                                          <tbody class="govuk-table__body">
+                                            <tr class="govuk-table__row">
+                                              <td class="govuk-table__cell"><b>Employer Phone Number</b></td>
+                                              <td class="govuk-table__cell"></td>
+                                              <td class="govuk-table__cell">07123456789</td>
+                                            </tr>
+                                            <tbody class="govuk-table__body">
+                                              <tr class="govuk-table__row">
+                                                <td class="govuk-table__cell"><b>Employer Email</b></td>
+                                                <td class="govuk-table__cell"></td>
+                                                <td class="govuk-table__cell">Zoraida@Employer.co.uk</td>
+                                              </tr>
+                                              <tbody class="govuk-table__body">
+                                                <tr class="govuk-table__row">
+                                                  <td class="govuk-table__cell"><b>Vacancy Holder Name</b></td>
+                                                  <td class="govuk-table__cell"></td>
+                                                  <td class="govuk-table__cell">Zoraida</td>
+                                                </tr>
+                                                <tbody class="govuk-table__body">
+                                                  <tr class="govuk-table__row">
+                                                    <td class="govuk-table__cell"><b>Vacancy Holder Phone Number</b></td>
+                                                    <td class="govuk-table__cell"></td>
+                                                    <td class="govuk-table__cell">07123456789</td>
+                                                  </tr>
+                                                  <tbody class="govuk-table__body">
+                                                    <tr class="govuk-table__row">
+                                                      <td class="govuk-table__cell"><b>Vacancy Holder Email</b></td>
+                                                      <td class="govuk-table__cell"></td>
+                                                      <td class="govuk-table__cell">Zoraida@Employer.co.uk</td>
+                                                    </tr>
+                                                  </tbody>
+                                                </table>
+
+      <button class="govuk-button govuk-button--primary" data-module="govuk-button" onclick="LinktoViewSupplier()">
+        Edit
+      </button>
+
+      <script>
+        function LinktoViewSupplier() {
+          window.location.href = "edit-employee-1"
+        }
+      </script>
+                                        
+                                              </div>
+
+        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="Payment-History">
+          <h2 class="govuk-heading-l">Payment</h2>
+          <table class="govuk-table">
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header">Introduction ID</th>
+                <th scope="col" class="govuk-table__header">Payment Number</th>
+                <th scope="col" class="govuk-table__header">Invoice Amount</th>
+                <th scope="col" class="govuk-table__header">Invoice Number</th>
+                <th scope="col" class="govuk-table__header">Due Date</th>
+                <th scope="col" class="govuk-table__header">Payment Sent Date</th>
+                <th scope="col" class="govuk-table__header">Payment Status</th>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">AAAA-AAAA</td>
+                <td class="govuk-table__cell">0</td>
+                <td class="govuk-table__cell">£1,500.00</td>
+                <td class="govuk-table__cell">Kick5016398Invoice000019</td>
+                <td class="govuk-table__cell">1/10/2020</td>
+                <td class="govuk-table__cell">1/10/2020</td>
+                <td class="govuk-table__cell "><a href="setup-pending-payment">
+                  Pending
+                </a></td>              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">AAAA-AAAA</td>
+                <td class="govuk-table__cell">1</td>
+                <td class="govuk-table__cell">£492.92</td>
+                <td class="govuk-table__cell"></td>
+                <td class="govuk-table__cell">15/11/2020</td>
+                <td class="govuk-table__cell">N/A</td>
+                <td class="govuk-table__cell "><a href="ApprovePaymentWage">
+                  Awaiting Approval
+                </a></td>              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">AAAA-AAAA</td>
+                <td class="govuk-table__cell">2</td>
+                <td class="govuk-table__cell">£492.92</td>
+                <td class="govuk-table__cell"></td>
+                <td class="govuk-table__cell">15/12/2020</td>
+                <td class="govuk-table__cell">N/A</td>
+                <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey">Not Due</strong></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">AAAA-AAAA</td>
+                <td class="govuk-table__cell">3</td>
+                <td class="govuk-table__cell">£492.92</td>
+                <td class="govuk-table__cell"></td>
+                <td class="govuk-table__cell">15/01/2021</td>
+                <td class="govuk-table__cell">N/A</td>
+                <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey">Not Due</strong></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">AAAA-AAAA</td>
+                <td class="govuk-table__cell">4</td>
+                <td class="govuk-table__cell">£492.92</td>
+                <td class="govuk-table__cell"></td>
+                <td class="govuk-table__cell">15/02/2021</td>
+                <td class="govuk-table__cell">N/A</td>
+                <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey">Not Due</strong></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">AAAA-AAAA</td>
+                <td class="govuk-table__cell">5</td>
+                <td class="govuk-table__cell">£492.92</td>
+                <td class="govuk-table__cell"></td>
+                <td class="govuk-table__cell">15/03/2021</td>
+                <td class="govuk-table__cell">N/A</td>
+                <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey">Not Due</strong></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">AAAA-AAAA</td>
+                <td class="govuk-table__cell">6</td>
+                <td class="govuk-table__cell">£492.92</td>
+                <td class="govuk-table__cell"></td>
+                <td class="govuk-table__cell">15/04/2021</td>
+                <td class="govuk-table__cell">N/A</td>
+                <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--grey">Not Due</strong></td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="Case">
+          <h2 class="govuk-heading-l">Placement Management</h2>
+          <table class="govuk-table">
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header"></th>
+                <th scope="col" class="govuk-table__header"></th>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">Placement Status</td>
+                <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green">
+            In Payment
+            </strong></td>
+                <td class="govuk-table__cell "><a href="EditPaymentStatus">
+                  Edit Placement Status
+                </a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="Notes">
+          <h2 class="govuk-heading-l">Notes</h2>
+          <button class="govuk-button govuk-button--secondary" data-module="govuk-button" onclick="LinktoAddNote()">
+            Add Note
+          </button>
+          <table class="govuk-table">
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header">Note</th>
+                <th scope="col" class="govuk-table__header">User</th>
+                <th scope="col" class="govuk-table__header">Date</th>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">This is some note text and I have updated a case with some details</td>
+                <td class="govuk-table__cell">Robbie.Kelsey</td>
+                <td class="govuk-table__cell "> 13/1/2021 at 13:03</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">Case Created</td>
+                <td class="govuk-table__cell">System</td>
+                <td class="govuk-table__cell ">13/1/2021 at 08:10</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+  <script>
+    function LinktoAddNote(){
+        window.location.href="AddNotes"
+      }
+  </script>
+{% endblock %}

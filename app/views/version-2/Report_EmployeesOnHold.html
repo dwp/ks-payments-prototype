@@ -1,0 +1,97 @@
+
+{% extends "layout.html" %}
+
+
+{% block pageTitle %}
+  Manage Kickstart Scheme Payments (Prototype)
+{% endblock %}
+
+{% block beforeContent %}
+<h1 class="govuk-heading-xl">
+  <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="more-detail">
+        Employee's on Hold
+      </label>
+    </h1>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+
+<table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header ">Introduction ID</th>
+      <th scope="col" class="govuk-table__header ">Employee Name</th>
+      <th scope="col" class="govuk-table__header ">Employer Org</th>
+      <th scope="col" class="govuk-table__header  ">Date of Status Change </th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell "><a href="ViewCase">AAAA-AAAA</a></td>
+      <td class="govuk-table__cell ">Analisa A</td>
+      <td class="govuk-table__cell ">Tesco</td>
+      <td class="govuk-table__cell ">08/10/2020</td>
+    </tr>
+  </tbody>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">BBBB-BBBB</td>
+      <td class="govuk-table__cell ">Lisa Harr</td>
+      <td class="govuk-table__cell ">Anglo American Plc</td>
+      <td class="govuk-table__cell ">08/10/2020</td>
+    </tr>
+  </tbody>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">CCCC-CCCC</td>
+      <td class="govuk-table__cell ">Terry Tester</td>
+      <td class="govuk-table__cell ">Anglo American Plc</td>
+      <td class="govuk-table__cell ">08/10/2020</td>
+    </tr>
+  </tbody>
+</table>
+
+<nav class="hmcts-pagination" id="pagination-label">
+
+<p class="govuk-visually-hidden" aria-labelledby="pagination-label">Pagination navigation</p>
+
+<ul class="hmcts-pagination__list">
+
+<li class="hmcts-pagination__item  hmcts-pagination__item--prev">
+  <a class="hmcts-pagination__link" href="">Previous<span class="govuk-visually-hidden"> set of pages</span></a>
+</li>
+
+<li class="hmcts-pagination__item"><a class="hmcts-pagination__link" href="/page=1">1</a></li>
+
+<li class="hmcts-pagination__item hmcts-pagination__item--dots">...</li>
+
+<li class="hmcts-pagination__item"><a class="hmcts-pagination__link" href="/page=5">5</a></li>
+
+<li class="hmcts-pagination__item hmcts-pagination__item--active">6</li>
+
+<li class="hmcts-pagination__item"><a class="hmcts-pagination__link" href="/page=7">7</a></li>
+
+<li class="hmcts-pagination__item hmcts-pagination__item--dots">...</li>
+
+<li class="hmcts-pagination__item"><a class="hmcts-pagination__link" href="/page=10">10</a></li>
+
+<li class="hmcts-pagination__item  hmcts-pagination__item--next">
+  <a class="hmcts-pagination__link" href="">Next<span class="govuk-visually-hidden"> set of pages</span></a>
+</li>
+
+</ul>
+
+<p class="hmcts-pagination__results">Showing <b>3</b> to <b>50</b> of <b>256</b> results</p>
+
+</nav>
+
+    </div>
+  </div>
+  <button href="Index" class="govuk-button govuk-button--secondary" data-module="govuk-button" >
+  Back
+</button>
+
+{% endblock %}

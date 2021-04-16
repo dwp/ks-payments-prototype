@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Manage Kickstart Scheme Payments (Prototype)
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <label class="govuk-heading-l" for="width-20">
+        Enter an Application ID
+      </label>
+      <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text" value="KS12345678">
+      <br>
+      <br>
+      <div>
+        <button onclick="LinktoviewSupplier()" class="govuk-button"  >
+        Search
+      </button>
+        <script>
+          function LinktoviewSupplier() {
+            window.location.href = "ViewSupplier"
+          }
+        </script>
+      </div>
+    </div>
+  {% endblock %}

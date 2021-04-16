@@ -1,0 +1,73 @@
+
+{% extends "layout.html" %}
+
+
+{% block pageTitle %}
+  Manage Kickstart Scheme Payments (Prototype)
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column">
+
+        </div>
+      </div>
+      <div>
+        <fieldset class="govuk-fieldset">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+      <h1 class="govuk-fieldset__heading">
+        Update Supplier
+      </h1>
+    </legend>
+
+    <table class="govuk-table">
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header"></th>
+          <th scope="col" class="govuk-table__header"></th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Payee Name</td>
+          <td class="govuk-table__cell">Amcor Plc#BS30 8XP#KICKSTART</td>
+      </tbody>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Supplier Numbers</td>
+          <td class="govuk-table__cell">75836298</td>
+      </tbody>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Site Name</td>
+          <td class="govuk-table__cell">KICKSTART</td>
+      </tbody>
+    </table>
+
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="width-20">
+        Application ID
+      </label>
+      <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text"></div>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="width-20">
+          Organisation Name
+        </label>
+        <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="text"></div>
+
+    <p></P>
+    <button class="govuk-button govuk-button--primary" data-module="govuk-button" onclick="LinktoViewSupplier()">
+  Update Supplier
+</button>
+<button class="govuk-button govuk-button--secondary" data-module="govuk-button" onclick="LinktoViewCase()">
+Cancel
+</button>
+<script>
+  function LinktoViewSupplier() {
+    window.location.href="ViewSupplier"
+  }
+</script>
+  </div>
+
+{% endblock %}

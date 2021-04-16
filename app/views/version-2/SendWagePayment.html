@@ -1,0 +1,76 @@
+
+{% extends "layout.html" %}
+
+
+{% block pageTitle %}
+  Manage Kickstart Scheme Payments (Prototype)
+{% endblock %}
+
+{% block beforeContent %}
+<h1 class="govuk-heading-xl">
+  <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="more-detail">
+        Approve Monthly Payment - Salary Check
+      </label>
+    </h1>
+    <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="more-detail">
+        Analisa Alexandra
+      </label>
+    <label class="govuk-label govuk-label--m" for="more-detail">
+            AAAA-AAAA
+      </label>
+      </h1>
+      <label class="govuk-label govuk-label--xs" for="more-detail">Case Status:
+      <strong class="govuk-tag govuk-tag--green">
+      In Payment
+      </strong>
+      </label>
+<p></p>
+
+      <label class="govuk-label govuk-label--xs" for="more-detail">Payment Status:
+    <strong class="govuk-tag govuk-tag--yellow">
+Awaiting Approval
+</strong>
+</label>
+{% endblock %}
+
+{% block content %}
+<table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header ">Title</th>
+      <th scope="col" class="govuk-table__header ">Detail</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Invoice Amount</td>
+      <td class="govuk-table__cell ">£492.44</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Estimated Average hours per week</td>
+      <td class="govuk-table__cell ">21.5</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Difference in Value</td>
+      <td class="govuk-table__cell ">-£115.89</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Checking Band</td>
+      <td class="govuk-table__cell ">Warning - You may need to contact the employer to confirm why the average hours worked per week is between 20 and 24.99 hours.</td>
+    </tr>
+  </tbody>
+</table>
+
+  <button class="govuk-button" data-module="govuk-button" href="Save and Continue" onclick="LinktoMonthlyPaymentPending()">
+    Approve Payment
+  </button>
+  <button href="Index" class="govuk-button govuk-button--secondary" data-module="govuk-button" >
+  Back
+</button>
+  <script>
+    function LinktoMonthlyPaymentPending() {
+      window.location.href="MonthlyPaymentPending#Payment-History"
+    }
+  </script>
+
+{% endblock %}

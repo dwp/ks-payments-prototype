@@ -1,0 +1,241 @@
+
+{% extends "layout.html" %}
+
+
+{% block pageTitle %}
+  Manage Kickstart Scheme Payments (Prototype)
+{% endblock %}
+{% block beforeContent %}
+<h1 class="govuk-heading-xl">
+    <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="more-detail">
+        KS12345678
+      </label>
+    <label class="govuk-label govuk-label--m" for="more-detail">
+            Amcor Plc
+      </label>
+      </h1>
+{% endblock %}
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column">
+      <div class="govuk-tabs" data-module="govuk-tabs">
+        <h2 class="govuk-tabs__title">
+          Contents
+        </h2>
+        <ul class="govuk-tabs__list">
+          <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+            <a class="govuk-tabs__tab" href="#Supplier-Details">
+              Employer Details
+            </a>
+          </li>
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#Payment-History">
+              Payment History
+            </a>
+          </li>
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#All-Employees">
+              Employee Details
+            </a>
+          </li>
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#Notes">
+              Notes
+            </a>
+          </li>
+        </ul>
+        <div class="govuk-tabs__panel" id="Supplier-Details">
+          <h2 class="govuk-heading-l">Employer Details</h2>
+          <table class="govuk-table">
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header"></th>
+                <th scope="col" class="govuk-table__header"></th>
+                <th scope="col" class="govuk-table__header"></th>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell"><b>Supplier Number</b></td>
+                <td class="govuk-table__cell"></td>
+                <td class="govuk-table__cell">75836298</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell"><b>Site Name</b></td>
+                <td class="govuk-table__cell"></td>
+                <td class="govuk-table__cell">KICKSTART</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell"><b>Payee Name</b></td>
+                <td class="govuk-table__cell"></td>
+                <td class="govuk-table__cell">Amcor#Ls101lgKICKSTART</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell"><b>Application ID</b></td>
+                <td class="govuk-table__cell"></td>
+                <td class="govuk-table__cell">KS12345678</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell"><b>Organisation Name</b></td>
+                <td class="govuk-table__cell"></td>
+                <td class="govuk-table__cell">Amcor Plc</td>
+              </tr>
+            </tbody>
+          </table>
+          <button class="govuk-button govuk-button" data-module="govuk-button" onclick="LinktoEditSupplier()">
+            Edit
+          </button>
+          <script>
+            function LinktoEditSupplier() {
+              window.location.href="Edit_Supplier"
+            }
+          </script>
+        </div>
+        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="Payment-History">
+          <h2 class="govuk-heading-l">Payment History</h2>
+          <table class="govuk-table">
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header">Introduction ID</th>
+                <th scope="col" class="govuk-table__header">Payment Number</th>
+                <th scope="col" class="govuk-table__header">Invoice Amount</th>
+                <th scope="col" class="govuk-table__header">Invoice Number</th>
+                <th scope="col" class="govuk-table__header">Payment Status</th>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">AAAA-AAAA</td>
+                <td class="govuk-table__cell">1</td>
+                <td class="govuk-table__cell">£704.11</td>
+                <td class="govuk-table__cell">Kick5005177000003</td>
+                <td class="govuk-table__cell">Payment Error</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">AAAA-AAAB</td>
+                <td class="govuk-table__cell">0</td>
+                <td class="govuk-table__cell">£1,500.00</td>
+                <td class="govuk-table__cell">Kick5005177000002</td>
+                <td class="govuk-table__cell">Payment Sent</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">AAAA-AAAC</td>
+                <td class="govuk-table__cell">0</td>
+                <td class="govuk-table__cell">£1,860.00</td>
+                <td class="govuk-table__cell">Kick5005177000001</td>
+                <td class="govuk-table__cell">Payment Sent</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+        <div class="govuk-tabs__panel" id="All-Employees">
+          <h2 class="govuk-heading-l">All Employee Details</h2>
+          <table class="govuk-table">
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header">Introduction ID</th>
+                <th scope="col" class="govuk-table__header">Name</th>
+                <th scope="col" class="govuk-table__header">Case Status</th>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell"><a href="ViewCase">
+                  AAAA-AAAA
+                </a></td>
+                <td class="govuk-table__cell">Analisa Alexandra</td>
+                <td class="govuk-table__cell">  <strong class="govuk-tag govuk-tag--green">
+                In Payment
+                </strong></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell"><a href="ViewCase">
+                  AAAA-AAAB
+                </a></td>
+                <td class="govuk-table__cell">Winston Smith</td>
+                <td class="govuk-table__cell">  <strong class="govuk-tag govuk-tag--green">
+                In Payment
+                </strong></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell"><a href="ViewCase">
+                  AAAA-AAAC
+                </a></td>
+                <td class="govuk-table__cell">Jacinda Guest</td>
+                <td class="govuk-table__cell">  <strong class="govuk-tag govuk-tag--green">
+                In Payment
+                </strong></td>
+              </tr>
+            </tbody>
+          </table>
+          <ul class="hmcts-pagination__list">
+
+          <li class="hmcts-pagination__item  hmcts-pagination__item--prev">
+            <a class="hmcts-pagination__link" href="">Previous<span class="govuk-visually-hidden"> set of pages</span></a>
+          </li>
+
+          <li class="hmcts-pagination__item"><a class="hmcts-pagination__link" href="/page=1">1</a></li>
+
+          <li class="hmcts-pagination__item hmcts-pagination__item--dots">...</li>
+
+          <li class="hmcts-pagination__item"><a class="hmcts-pagination__link" href="/page=5">5</a></li>
+
+          <li class="hmcts-pagination__item hmcts-pagination__item--active">6</li>
+
+          <li class="hmcts-pagination__item"><a class="hmcts-pagination__link" href="/page=7">7</a></li>
+
+          <li class="hmcts-pagination__item hmcts-pagination__item--dots">...</li>
+
+          <li class="hmcts-pagination__item"><a class="hmcts-pagination__link" href="/page=10">10</a></li>
+
+          <li class="hmcts-pagination__item  hmcts-pagination__item--next">
+            <a class="hmcts-pagination__link" href="">Next<span class="govuk-visually-hidden"> set of pages</span></a>
+          </li>
+
+          </ul>
+          <script>
+            function LinktoEditSupplier() {
+              window.location.href="Edit_Supplier"
+            }
+          </script>
+        </div>
+        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="Notes">
+          <h2 class="govuk-heading-l">Notes</h2>
+          <button class="govuk-button govuk-button--secondary" data-module="govuk-button" onclick="LinktoAddNoteSUP()">
+            Add Note
+          </button>
+          <table class="govuk-table">
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th scope="col" class="govuk-table__header">Note</th>
+                <th scope="col" class="govuk-table__header">User</th>
+                <th scope="col" class="govuk-table__header">Date</th>
+              </tr>
+            </thead>
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">This is some note text and I have updated a case with some details</td>
+                <td class="govuk-table__cell">Robbie.Kelsey</td>
+                <td class="govuk-table__cell ">13.00 13/1/2021</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">Case Created</td>
+                <td class="govuk-table__cell">System</td>
+                <td class="govuk-table__cell ">08.00 13/1/2021</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+  <script>
+    function LinktoAddNoteSUP(){
+        window.location.href="AddNotesSUP"
+      }
+  </script>
+{% endblock %}

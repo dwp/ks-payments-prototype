@@ -1,0 +1,115 @@
+
+{% extends "layout.html" %}
+
+
+{% block pageTitle %}
+Manage Kickstart Scheme Payments (Prototype)
+{% endblock %}
+
+{% block beforeContent %}
+<h1 class="govuk-heading-xl">
+  <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="more-detail">
+        Setup Payment Unapproval
+      </label>
+    </h1>
+<h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="more-detail">
+    Analisa Alexandra 
+  </label>
+<label class="govuk-label govuk-label--m" for="more-detail">
+        AAAA-AAAA
+  </label>
+  </h1>
+      <label class="govuk-label govuk-label--xs" for="more-detail">Case Status:
+      <strong class="govuk-tag govuk-tag--green">
+      In Payment
+      </strong>
+      </label>
+<p></p>
+
+      <label class="govuk-label govuk-label--xs" for="more-detail">Payment Status:
+    <strong class="govuk-tag govuk-tag--green">
+Payment Pending
+</strong>
+</label>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-inset-text">
+  Payment will remain Pending until 18:00 daily and cannot be unapproved after this time
+</div>
+
+
+
+<table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th scope="col" class="govuk-table__header ">Title</th>
+      <th scope="col" class="govuk-table__header ">Detail</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Application ID</td>
+      <td class="govuk-table__cell ">KS12345678</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Introduction ID</td>
+      <td class="govuk-table__cell ">AAAA-AAAA</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Organisation Name</td>
+      <td class="govuk-table__cell ">Amcor plc</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Supplier Number</td>
+      <td class="govuk-table__cell ">75836298</td>
+    </tr>    
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Site Name</td>
+      <td class="govuk-table__cell ">KICKSTART</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">NINO</td>
+      <td class="govuk-table__cell ">AA123456A</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Claimant ID</td>
+      <td class="govuk-table__cell ">239f896a-567d-4fb3-9822-b07efb69e479</td>
+    </tr>    
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Invoice Amount</td>
+      <td class="govuk-table__cell ">£1,860.00</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Payment Number</td>
+      <td class="govuk-table__cell ">0</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Date of Birth</td>
+      <td class="govuk-table__cell ">08/11/2003</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Start of Payment Period</td>
+      <td class="govuk-table__cell ">14/02/2020</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell ">Payment Due date</td>
+      <td class="govuk-table__cell ">02/11/2020</td>
+    </tr>
+  </tbody>
+</table>
+
+
+  <button class="govuk-button" data-module="govuk-button" href="Save and Continue" onclick="LinktoViewCase()">
+    Unapprove Payment
+  </button>
+  <button class="govuk-button govuk-button--secondary" data-module="govuk-button" href="Save and Continue" onclick="LinktoViewCase()">
+    Cancel
+  </button>
+  <script>
+    function LinktoViewCase() {
+      window.location.href="ViewCase"
+    }
+  </script>
+
+{% endblock %}

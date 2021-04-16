@@ -1,0 +1,103 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Manage Kickstart Scheme Payments (Prototype)
+{% endblock %}
+{% block beforeContent %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">Manage Kickstart Scheme payments</h1>
+      <p>
+      Use this service to manage Kickstart Scheme payments to suppliers and their employees.
+    </p>
+    </div>
+  </div>
+{% endblock %}
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
+      <div class="card">
+        <div class="container">
+          <h1 class="govuk-heading-m">Employees</h1>
+          <hr>
+
+          <ul class="govuk-list">
+            <li>
+              <a class="govuk-link" href="AddCase">Add Employee</a>
+            </li>
+            <br>
+            <li>
+              <a class="govuk-link" href="SearchCase">Find Employee</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+    <div class="govuk-grid-column-one-third">
+      <div class="card">
+        <div class="container">
+          <h1 class="govuk-heading-m">Employers</h1>
+          <hr>
+
+          <ul class="govuk-list">
+            <li>
+              <a class="govuk-link" href="SearchSuppliers">Find Employers</a>
+            </li>
+            <br>
+            <li>
+              <a class="govuk-link" href="Report_SuppliersNoSOP">Employers missing details</a>
+            </li>
+            <br>
+            <li>
+              <a class="govuk-link" href="Report_AllSuppliers">View all Employers</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+      <div class="card">
+        <div class="container">
+          <h1 class="govuk-heading-m">Payments</h1>
+          <hr>
+
+            <ul class="govuk-list">
+            <li>
+              <a class="govuk-link" href="SetupApproval">Approve setup payments</a>
+            </li>
+            <br>
+            <li>
+              <a class="govuk-link" href="MonthlyApproval">Approve monthly payments</a>
+            </li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <p>&nbsp;</p>
+  <p></p>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
+      <div class="card">
+        <div class="container">
+          <h1 class="govuk-heading-m">Service History</h1>
+          <hr>
+          
+            <ul class="govuk-list">
+            <li>
+              <a class="govuk-link" href="ServiceUpdate">Service History</a>
+            </li>
+            <br>
+          </ul>
+          
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
