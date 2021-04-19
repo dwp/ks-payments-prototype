@@ -1,0 +1,69 @@
+
+{% extends "layout.html" %}
+
+
+{% block pageTitle %}
+  Manage Kickstart Scheme Payments (Prototype)
+{% endblock %}
+
+{% block beforeContent %}
+<h1 class="govuk-heading-xl">
+  <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="more-detail">
+        Employees on hold
+      </label>
+    </h1>
+{% endblock %}
+
+{% block content %}
+
+      <button href="Index" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+      Download
+      </button>
+<table class="govuk-table">
+<thead class="govuk-table__head">
+  <tr class="govuk-table__row">
+    <th scope="col" class="govuk-table__header ">Introduction ID</th>
+    <th scope="col" class="govuk-table__header ">Employee Name</th>
+    <th scope="col" class="govuk-table__header ">Employer Org Name</th>
+    <th scope="col" class="govuk-table__header ">Organisation Name</th>
+    <th scope="col" class="govuk-table__header ">Status Change Date</th>
+</thead>
+<tbody class="govuk-table__body">
+  <tr class="govuk-table__row">
+    <td class="govuk-table__cell "><a href="view-case-on-hold">KL34-3D5T</a></td>
+    <td class="govuk-table__cell ">Billy Bunting</td>
+    <td class="govuk-table__cell ">Jellied Eels 4U</td>
+    <td class="govuk-table__cell ">Training Council</td>
+    <td class="govuk-table__cell ">16/04/2021</td>
+  </tr>
+</tbody>
+<tbody class="govuk-table__body">
+  <tr class="govuk-table__row">
+    <td class="govuk-table__cell "><a href="#">AAAA-AAAA</a></td>
+    <td class="govuk-table__cell ">Analisa Alexandra</td>
+    <td class="govuk-table__cell ">Amcor plc</td>
+    <td class="govuk-table__cell ">Nationwide Building Society PLC</td>
+    <td class="govuk-table__cell ">13/04/2021</td>
+  </tr>
+</tbody>
+<tbody class="govuk-table__body">
+  <tr class="govuk-table__row">
+    <td class="govuk-table__cell "><a href="#">A1B4-7YT3</a></td>
+    <td class="govuk-table__cell ">Lilia Lambdin</td>
+    <td class="govuk-table__cell ">Tesco plc</td>
+    <td class="govuk-table__cell ">National Westminster Bank (NatWest) ROFTT</td>
+    <td class="govuk-table__cell ">16/04/2021</td>
+  </tr>
+</tbody>
+<tbody class="govuk-table__body">
+  <tr class="govuk-table__row">
+    <td class="govuk-table__cell "><a href="#">D86T-8U91</a></td>
+    <td class="govuk-table__cell ">Evalyn Elledge</td>
+    <td class="govuk-table__cell ">Tesco plc</td>
+    <td class="govuk-table__cell ">Tesco plc</td>
+    <td class="govuk-table__cell ">16/04/2021</td>
+  </tr>
+</tbody>
+</table>
+
+{% endblock %}

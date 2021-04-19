@@ -1,4 +1,4 @@
-{% extends "layout.html" %}
+{% extends "layout-2.html" %}
 
 {% block pageTitle %}
   Manage Kickstart Scheme Payments (Prototype)
@@ -64,7 +64,7 @@
           <h1 class="govuk-heading-m">Payments</h1>
           <hr>
 
-            <ul class="govuk-list">
+          <ul class="govuk-list">
             <li>
               <a class="govuk-link" href="SetupApproval">Approve setup payments <span id="notifications" class="moj-notification-badge">97</span></a>
             </li>
@@ -75,7 +75,7 @@
             <br>
             <li>
               <a class="govuk-link" href="Assignedtome">Assigned to me <span id="notifications" class="moj-notification-badge">5</span></a>
-            </li>      
+            </li>
           </ul>
 
         </div>
@@ -88,20 +88,67 @@
     <div class="govuk-grid-column-one-third">
       <div class="card">
         <div class="container">
-          <h1 class="govuk-heading-m">Service History</h1>
+          <h1 class="govuk-heading-m">Manage Tasks</h1>
           <hr>
-          
-            <ul class="govuk-list">
+
+          <ul class="govuk-list">
             <li>
-              <a class="govuk-link" href="ServiceUpdate">Service History</a>
+              <a class="govuk-link" href="#">All Assigned Tasks</a>
             </li>
             <br>
           </ul>
-          
+
+        </div>
+      </div>
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+      <div class="card">
+        <div class="container">
+          <h1 class="govuk-heading-m">Management Information</h1>
+          <hr>
+
+          <ul class="govuk-list">
+            <li>
+              <a class="govuk-link" href="#">Employees</a>
+            </li>
+            <br>
+            <li>
+              <a class="govuk-link" href="#">Employers</a>
+            </li>
+            <br>            
+            <li>
+              <a class="govuk-link" href="#">Setup payments</a>
+            </li>
+            <br>
+            <li>
+              <a class="govuk-link" href="#">Monthly payments</a>
+            </li>
+            <br>                        
+          </ul>
+
+        </div>
+      </div>
+    </div>    
+    
+
+        <div class="govuk-grid-column-one-third">
+      <div class="card">
+        <div class="container">
+          <h1 class="govuk-heading-m">Service History</h1>
+          <hr>
+
+          <ul class="govuk-list">
+            <li>
+              <a class="govuk-link" href="ServiceUpdate">Service History</a>
+            </li>
+          </ul>
 
         </div>
       </div>
     </div>
   </div>
+  
+  
 
 {% endblock %}
