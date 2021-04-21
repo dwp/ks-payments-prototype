@@ -1,114 +1,114 @@
-
 {% extends "layout.html" %}
-
 
 {% block pageTitle %}
   Manage Kickstart Scheme Payments (Prototype)
 {% endblock %}
 
 {% block beforeContent %}
-<h1 class="govuk-heading-xl">
-  <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="more-detail">
+  <h1 class="govuk-heading-xl">
+    <h1 class="govuk-label-wrapper">
+      <label class="govuk-label govuk-label--l" for="more-detail">
         Edit Placement Status
       </label>
     </h1>
 
-    <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="more-detail">
-        AAAA-AAAA
+    <h1 class="govuk-label-wrapper">
+      <label class="govuk-label govuk-label--m" for="more-detail">
+        Analisa Alexandra 
       </label>
-    <label class="govuk-label govuk-label--m" for="more-detail">
-             Analisa Alexandra
+      <label class="govuk-label govuk-label--s" for="more-detail">
+             AAAA-AAAA
       </label>
-      </h1>
-      <strong class="govuk-tag govuk-tag--green">
+    </h1>
+
+  {% endblock %}
+
+  {% block content %}
+    <table class="govuk-table">
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header"></th>
+          <th scope="col" class="govuk-table__header"></th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">Current Placement Status</td>
+          <td class="govuk-table__cell">
+            <strong class="govuk-tag govuk-tag--turquoise">
   In Payment
   </strong>
-{% endblock %}
+          </td>
+        </tbody>
+      </table>
 
-{% block content %}
-<table class="govuk-table">
-  <thead class="govuk-table__head">
-    <tr class="govuk-table__row">
-      <th scope="col" class="govuk-table__header"></th>
-      <th scope="col" class="govuk-table__header"></th>
-    </tr>
-  </thead>
-  <tbody class="govuk-table__body">
-    <tr class="govuk-table__row">
-      <td class="govuk-table__cell">Current Placement Status</td>
-      <td class="govuk-table__cell"><strong class="govuk-tag govuk-tag--green">
-  In Payment
-  </strong></td>
-  </tbody>
-</table>
-
-<div class="govuk-form-group">
-  <fieldset class="govuk-fieldset">
-    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-      <h1 class="govuk-fieldset__heading">
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
         What is the new Placement status?
       </h1>
-    </legend>
-    <div class="govuk-radios">
-      <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
-        <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+          </legend>
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+              <label class="govuk-label govuk-radios__label" for="where-do-you-live">
           In Payment
           <div id="event-name-hint" class="govuk-hint">
     Placements can receive payments
   </div>
-        </label>
-      </div>
-      <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
-        <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+              <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
           On Hold
           <div id="event-name-hint" class="govuk-hint">
     Placement on hold. Payments temporarily stopped
   </div>
-        </label>
-      </div>
-      <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
-        <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="where-do-you-live-3" name="where-do-you-live" type="radio" value="wales">
+              <label class="govuk-label govuk-radios__label" for="where-do-you-live-3">
           Closed
           <div id="event-name-hint" class="govuk-hint">
     Placement and payments have finished
   </div>
-        </label>
-      </div>
-      <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland">
-        <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="where-do-you-live-4" name="where-do-you-live" type="radio" value="northern-ireland">
+              <label class="govuk-label govuk-radios__label" for="where-do-you-live-4">
           ECT Checks
           <div id="event-name-hint" class="govuk-hint">
     Placement cannot get payments until reviewed by Enhanced checking team
   </div>
-        </label>
-      </div>
-    </div>
-    <p></p>
-    <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="event-name">
+              </label>
+            </div>
+          </div>
+          <p></p>
+          <h1 class="govuk-label-wrapper">
+            <label class="govuk-label govuk-label--l" for="event-name">
       Notes
     </label>
- <div class="govuk-form-group">
+            <div class="govuk-form-group">
 
-  <div id="more-detail-hint" class="govuk-hint">
+              <div id="more-detail-hint" class="govuk-hint">
     Enter details to support the change in status of this placement
   </div>
-  <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
-</div>
+              <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+            </div>
 
-
-  <button class="govuk-button" data-module="govuk-button" onclick="LinktoViewCase()">
+            <button class="govuk-button" data-module="govuk-button" onclick="LinktoViewCase()">
     Continue
   </button>
-  <button class="govuk-button govuk-button--secondary" data-module="govuk-button" onclick="LinktoViewCase()">
+            <button class="govuk-button govuk-button--secondary" data-module="govuk-button" onclick="LinktoViewCase()">
     Cancel
   </button>
-  <script>
-    function LinktoViewCase() {
-      window.location.href="ViewCase"
-    }
-  </script>
-{% endblock %}
+            <script>
+              function LinktoViewCase() {
+                window.location.href = "ViewCase"
+              }
+            </script>
+          {% endblock %}
